@@ -1,0 +1,104 @@
+/* by default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;  /*horizentally at center */
+    align-items: center; /* Vertically center content */
+    min-height: 100vh;     /* Set minimum height to cover the viewport */
+    background: #4b7575;
+}
+
+
+.converter-container{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 40px 55px;
+    text-align: center;    /*all text go to center */
+
+}
+
+.converter-container h1{
+    font-size: 30px;
+    text-decoration: underline;
+    color: rgb(37, 28, 28);
+    margin-bottom: 40px;
+}
+
+
+.amount,.convertedAmount{
+    border-radius: 100px;
+}
+
+/* change both input box style */
+.amount,.convertedAmount {
+    height: 35px;
+    border: 2px solid ;
+    font-size: 15px;
+    padding: 4px;
+}
+
+
+/* To hide the up and down arrows in an input type number field */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* change the border color when the input is focused */
+.amount:focus ,.convertedAmount {
+    outline: none; /* To remove default focus outline */
+    border-color: #1c6ec5;
+}
+
+
+
+/*
+
+
+/* arrow position and center */
+ .arrow_parent{
+    display: flex;
+    justify-content: center;          /* Horizontally center content */
+ }
+
+/* changing arroe property */
+.converter-container .arrow{
+    transform: rotate(90deg); /* Rotate arrow icon */
+    font-size: 44px;
+    overflow: hidden;
+    width: 50px;
+   
+    
+}
+
+.converter-container .result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+/* changing button property */
+.button1, .button2{
+    padding: 3px 5px;
+    margin-top: 20px;
+    background-color: rgb(50, 133, 138);
+    color: rgb(255, 255, 255);
+    height: 30px;
+    border-radius: 100%;    /* Rounded button */
+    width: 30px;
+    cursor: pointer;  /* Cursor style */
+}
+
+
+/* responsive code */

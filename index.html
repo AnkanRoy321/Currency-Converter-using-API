@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRANCY CONVERTER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main>section>.converter-container>h1{Currancy Converter} -->
+    <main>
+        <section>      <!-- section:to group together related content -->
+            <div class="converter-container">
+                <h1>Currancy Converter</h1>
+
+                    <div class="input-container">
+
+                        <input type="number" value="1"  class="amount" />          <!-- placeholder provide demo text but valuue give you proper text inside input -->
+                        <select class="fromcurrancy" >                              <!-- select:create dropdown with many option -->
+                                <!-- inside this all {code&name} added one by one through js  -->
+                        </select>
+                        
+                    </div>
+                    <div class="button">   <!-- create two button to increase and decrease amount -->
+                        <button class="button1">+</button>
+                        <button class="button2">-</button>
+                    </div>
+
+                <div class="arrow_parent">
+                <div class="arrow">↭</div>  <!-- arrow image -->
+                </div>
+
+
+                    <div class="output-container">
+                        
+                        <input type="number" class="convertedAmount">
+                        <select class="tocurrancy" >
+                        <!-- inside this all {code&name} added one by one through js  -->
+                        </select>
+                    </div>
+                    
+                <div class="result">1 USD= 82 INR</div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js "></script>
+</body>
+</html>
